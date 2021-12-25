@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Aarif K Pasha">
+    <meta name="keywords" content="Web Developer, Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarif | Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,800;0,900;1,100;1,300;1,500;1,800;1,900&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css" defer>
+</head>
+
+<body data-theme="dark">
+    <div class="top-bar fixed-div p-4 text-end">
+        <span class="cur-ptr pe-2" onclick="alert('specify jump location')">
+            <svg class="ico-sm" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0.5 18C0.5 14.3057 0.698604 11.3711 1.21611 9.04252C1.73235 6.71964 2.55926 5.03059 3.79493 3.79493C5.03059 2.55926 6.71964 1.73235 9.04252 1.21611C11.3711 0.698604 14.3057 0.5 18 0.5C21.6943 0.5 24.6289 0.698604 26.9575 1.21611C29.2804 1.73235 30.9694 2.55926 32.2051 3.79493C33.4407 5.03059 34.2677 6.71964 34.7839 9.04252C35.3014 11.3711 35.5 14.3057 35.5 18C35.5 21.6943 35.3014 24.6289 34.7839 26.9575C34.2677 29.2804 33.4407 30.9694 32.2051 32.2051C30.9694 33.4407 29.2804 34.2677 26.9575 34.7839C24.6289 35.3014 21.6943 35.5 18 35.5C14.3057 35.5 11.3711 35.3014 9.04252 34.7839C6.71964 34.2677 5.03059 33.4407 3.79493 32.2051C2.55926 30.9694 1.73235 29.2804 1.21611 26.9575C0.698604 24.6289 0.5 21.6943 0.5 18Z"
+                    stroke="#E5E5E5" />
+                <path
+                    d="M20.6254 11.7501C21.661 11.7501 22.5005 10.9107 22.5005 9.87507C22.5005 8.83949 21.661 8 20.6254 8C19.5898 8 18.7503 8.83949 18.7503 9.87507C18.7503 10.9107 19.5898 11.7501 20.6254 11.7501ZM14.4412 20.4017L13.863 21.7501H11.25C10.5598 21.7501 10 22.3099 10 23.0002C10 23.6905 10.5598 24.2502 11.25 24.2502H14.2756C15.0275 24.2502 15.7045 23.8034 15.9987 23.1139L16.342 22.3123L15.9252 22.0662C15.2486 21.6665 14.751 21.0751 14.4412 20.4017ZM25.0006 16.75H23.2806L22.2626 14.6698C21.7743 13.6717 20.8778 12.942 19.8492 12.6799L17.0725 11.8541C15.967 11.5884 14.8158 11.8326 13.9146 12.5236L12.3649 13.7116C11.8169 14.1315 11.713 14.9159 12.1337 15.464C12.5544 16.012 13.3384 16.1148 13.8861 15.6952L15.4365 14.5073C15.7362 14.2772 16.1178 14.1948 16.4237 14.2674L16.9979 14.4381L15.5346 17.8519C15.0416 19.0036 15.4834 20.3524 16.562 20.9892L19.8816 22.949L18.8085 26.3761C18.6023 27.0347 18.9691 27.7359 19.6277 27.9422C19.7523 27.9812 19.8781 28 20.002 28C20.5336 28 21.0266 27.6574 21.1942 27.123L22.4302 23.1752C22.661 22.3638 22.3173 21.4923 21.5848 21.0505L19.1925 19.6387L20.4156 16.5808L21.2075 18.1992C21.52 18.8375 22.1809 19.2497 22.8915 19.2497H25.0006C25.6908 19.2497 26.2506 18.6899 26.2506 17.9996C26.2506 17.3093 25.6908 16.75 25.0006 16.75Z"
+                    fill="white" />
+            </svg>
+        </span>
+        <span class="cur-ptr" onclick="window.location='index.html'">
+            <svg class="ico-sm cur-ptr" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0.5 18C0.5 14.3057 0.698604 11.3711 1.21611 9.04252C1.73235 6.71964 2.55926 5.03059 3.79493 3.79493C5.03059 2.55926 6.71964 1.73235 9.04252 1.21611C11.3711 0.698604 14.3057 0.5 18 0.5C21.6943 0.5 24.6289 0.698604 26.9575 1.21611C29.2804 1.73235 30.9694 2.55926 32.2051 3.79493C33.4407 5.03059 34.2677 6.71964 34.7839 9.04252C35.3014 11.3711 35.5 14.3057 35.5 18C35.5 21.6943 35.3014 24.6289 34.7839 26.9575C34.2677 29.2804 33.4407 30.9694 32.2051 32.2051C30.9694 33.4407 29.2804 34.2677 26.9575 34.7839C24.6289 35.3014 21.6943 35.5 18 35.5C14.3057 35.5 11.3711 35.3014 9.04252 34.7839C6.71964 34.2677 5.03059 33.4407 3.79493 32.2051C2.55926 30.9694 1.73235 29.2804 1.21611 26.9575C0.698604 24.6289 0.5 21.6943 0.5 18Z"
+                    stroke="#E5E5E5" />
+                <path
+                    d="M17.5186 13.1885L9.28686 19.9683V27.2856C9.28686 27.4751 9.36212 27.6568 9.49609 27.7908C9.63006 27.9247 9.81177 28 10.0012 28L15.0045 27.9871C15.1933 27.9861 15.3741 27.9104 15.5073 27.7766C15.6405 27.6427 15.7153 27.4615 15.7153 27.2727V22.9994C15.7153 22.81 15.7905 22.6283 15.9245 22.4943C16.0585 22.3603 16.2402 22.2851 16.4296 22.2851H19.2871C19.4765 22.2851 19.6582 22.3603 19.7922 22.4943C19.9262 22.6283 20.0015 22.81 20.0015 22.9994V27.2696C20.0012 27.3636 20.0194 27.4567 20.0552 27.5436C20.091 27.6306 20.1435 27.7096 20.2099 27.7761C20.2763 27.8427 20.3551 27.8955 20.4419 27.9316C20.5287 27.9676 20.6218 27.9862 20.7158 27.9862L25.7173 28C25.9067 28 26.0884 27.9247 26.2224 27.7908C26.3564 27.6568 26.4316 27.4751 26.4316 27.2856V19.9634L18.2017 13.1885C18.1049 13.1105 17.9844 13.068 17.8601 13.068C17.7359 13.068 17.6153 13.1105 17.5186 13.1885V13.1885ZM30.5214 17.7966L26.7888 14.7199V8.53577C26.7888 8.39368 26.7324 8.2574 26.6319 8.15692C26.5314 8.05645 26.3951 8 26.253 8H23.7528C23.6107 8 23.4744 8.05645 23.3739 8.15692C23.2734 8.2574 23.217 8.39368 23.217 8.53577V11.7777L19.2197 8.48889C18.8361 8.17322 18.3547 8.00063 17.8579 8.00063C17.3611 8.00063 16.8798 8.17322 16.4961 8.48889L5.19444 17.7966C5.14019 17.8415 5.0953 17.8966 5.06235 17.9588C5.0294 18.021 5.00902 18.089 5.00239 18.1591C4.99575 18.2292 5.00299 18.2999 5.02369 18.3671C5.04438 18.4344 5.07813 18.497 5.123 18.5512L6.26152 19.9353C6.30628 19.9897 6.36132 20.0347 6.42351 20.0678C6.48569 20.101 6.5538 20.1215 6.62393 20.1282C6.69406 20.135 6.76483 20.1279 6.83219 20.1072C6.89956 20.0866 6.9622 20.0529 7.01652 20.008L17.5186 11.358C17.6153 11.28 17.7359 11.2374 17.8601 11.2374C17.9844 11.2374 18.1049 11.28 18.2017 11.358L28.7042 20.008C28.7584 20.0529 28.821 20.0867 28.8882 20.1074C28.9555 20.1281 29.0262 20.1353 29.0963 20.1287C29.1664 20.122 29.2344 20.1016 29.2966 20.0687C29.3588 20.0357 29.4139 19.9909 29.4588 19.9366L30.5973 18.5525C30.6421 18.498 30.6757 18.4351 30.6962 18.3675C30.7166 18.3 30.7235 18.229 30.7165 18.1588C30.7094 18.0886 30.6885 18.0204 30.6551 17.9582C30.6216 17.8961 30.5761 17.8412 30.5214 17.7966V17.7966Z"
+                    fill="white" />
+            </svg>
+        </span>
+    </div>
+    <div class="container-fluid snap-cont h-100">
+        <div class="row snap-row h-100">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-4">
+                <div class="position-relative rel-elem">
+                    <div class="position-absolute top-pd-1">
+                        <div class="bg-blr-1"></div>
+                    </div>
+                    <div class="position-absolute top-pd-1">
+                        <div class="bg-blr-2"></div>
+                    </div>
+                </div>
+                <div class="main-content h-100 d-flex vert-cen hori-cen">
+                    <div class="d-flex flex-column">
+                        <span class="px-2 content-sz scr-reveal-fd-lr-1">
+                            <span class="opacity-25">
+                                Hola • Bonjour • Привет • ഹലോ • नमस्ते
+                            </span>
+                        </span>
+                        <span class="scr-reveal-fd-lr-1">
+                            <span class="jumbo-head-sz">Hello.</span>
+                            <span class="cont-sz">Friend</span>
+                        </span>
+                        <span class="px-2 d-flex flex-column scr-reveal-fd-lr-1">
+                            <span class="text-start">
+                                I'm<span class="sub-head-cont-sz"> Aarif K Pasha </span>
+                            </span>
+                            <span class="sub-head-cont-sz opacity-25">
+                                <span class="anm-wrk-clip"></span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row snap-row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-4">
+                <div class="main-content h-100 w-100 vert-cen hori-cen">
+                    <div
+                        class="container col-xl-6 col-lg-6 d-xl-flex d-lg-flex flex-xl-row flex-lg-row flex-xs-column flt-img-btlr-prof-1-trig p-1">
+                        <div class="flt-img-btlr-prof-1">
+                            <img class="w-100 max-w-400 min-w-200 flt-img-p-1" src="/img/profile_img_1.jpg" alt="">
+                        </div>
+                        <div class="d-flex flex-column move-up-100">
+                            <span class="main-head-sz scr-reveal-fd-lr-2">
+                                <span class="opacity-25">
+                                    About Me
+                                </span>
+                            </span>
+                            <span class="scr-reveal-fd-lr-2">
+                                <span class="sub-head-sz text-end">Aarif K Pasha</span>
+                            </span>
+                            <span class="d-flex flex-column">
+                                <span class="text-start scr-reveal-fd-lr-2 tx-just">
+                                    Software Engineer, Creative Developer & Graphic Designer. I recognize my areas of
+                                    interest and expertise in the design, development and implementation of creative web
+                                    applications.
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-5">&nbsp;</div>
+        <div class="row snap-row hori-cen">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 p-4 my-5 trigger-hbgr-1">
+                <div class="main-content h-100 w-100 vert-cen hori-cen text-center float-end hbgr hbgr-1">
+                    WORK IN PROGRESS <br>
+                    <button class="cust-btn px-3 py-2 m-3" onclick="window.open('/media/aarif_cv.pdf')">
+                        View my CV <i class="fa fa-file"></i>
+                    </button>
+                    <div class="position-relative w-100 float-end d-flex hori-cen">
+                        <div class="position-absolute">
+                            <img src="/img/wip_bg_1.png" alt="">
+                        </div>
+                        <div class="position-absolute up-down">
+                            <img src="/img/wip_fg_1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row snap-row hori-cen h-25">
+        </div>
+
+
+</body>
+
+</html>

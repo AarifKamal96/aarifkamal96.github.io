@@ -1,0 +1,407 @@
+:root {
+    --contrast-bg: #000000;
+    --invert-contrast-bg: #ffffff;
+    --bg: #242b33;
+    --invert-bg: #e5e5e5;
+    --txt: #ffffff;
+    --invert-txt: #242b33;
+    --time-animation: 0.6s;
+    --time-transition: 0.3s;
+    --jumbo-head-sz: 144px;
+    --main-head-sz: 64px;
+    --sub-head-sz: 36px;
+    --sub-head-cont-sz: 24px;
+    --cont-txt-sz: 14px;
+    --corner-rad: 1.25rem;
+    --bg-grad: linear-gradient(to right, #8a2387, #e94057, #f27121);
+    --bg-grad-2: linear-gradient(to right, #56ab2f, #a8e063);
+    --bg-grad-3: linear-gradient(to right, #00c6ff, #0072ff);
+    --clr-1: #e94057;
+    --clr-2: #56ab2f;
+    --clr-3: #00c6ff;
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --jumbo-head-sz: 96px;
+        --main-head-sz: 48px;
+        --sub-head-sz: 36px;
+        --sub-head-cont-sz: 20px;
+        --cont-txt-sz: 14px;
+        --corner-rad: 1.25rem;
+    }
+}
+
+html{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--contrast-bg);
+    overflow-x: hidden;
+    max-width: 1920px;
+    margin: auto;
+    /* background: linear-gradient(to right, var(--contrast-bg) 50%, var(--bg) 50%); */
+}
+
+body {
+    background-color: var(--contrast-bg);
+    /* background: linear-gradient(to right, var(--contrast-bg) 50%, var(--bg) 50%); */
+    color: var(--txt);
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-size: var(--cont-txt-sz);
+    /* overflow: hidden; */
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: var(--contrast-bg);
+        /* background: linear-gradient(to bottom, var(--contrast-bg) 50%, var(--bg) 50%); */
+    }
+    html {
+        background-color: var(--contrast-bg);
+        /* background: linear-gradient(to bottom, var(--contrast-bg) 50%, var(--bg) 50%); */
+    }
+}
+
+/* REUS - S */
+
+.hidden {
+    display: none;
+}
+
+.sect-1 {
+    background-color: var(--contrast-bg);
+}
+
+.sect-2 {
+    background-color: var(--bg);
+}
+
+.fixed-div {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.vert-cen {
+    align-items: center;
+}
+
+.hori-cen {
+    justify-content: center;
+}
+
+/* .snap-cont {
+    scroll-snap-type: y proximity;
+}
+
+.snap-row {
+    scroll-snap-align: center;
+} */
+
+.ico-sm {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.cur-ptr {
+    cursor: pointer;
+}
+
+.split-bg {
+    background: linear-gradient(to right, var(--contrast-bg) 50%, var(--bg) 50%);
+}
+
+@media only screen and (max-width: 600px) {
+    .split-bg {
+        background: linear-gradient(to bottom, var(--contrast-bg) 50%, var(--bg) 50%);
+    }
+}
+
+.jumbo-head-sz {
+    font-size: var(--jumbo-head-sz);
+}
+.main-head-sz {
+    font-size: var(--main-head-sz);
+}
+.sub-head-sz {
+    font-size: var(--sub-head-sz);
+}
+.sub-head-cont-sz {
+    font-size: var(--sub-head-cont-sz);
+}
+.cont-sz {
+    font-size: var(--cont-sz);
+}
+
+.cust-btn {
+    background-color: var(--txt);
+    color: var(--bg);
+    border-radius: var(--corner-rad);
+}
+
+.anm-wrk-clip::after {
+    animation: clip_anim 12s infinite 0.5s;
+    content: "\00a0";
+}
+
+@keyframes clip_anim {
+    0% {
+        clip-path: polygon(-10% -10%, -10% -10%, -10% 110%, -10% 110%);
+        content: "Software Engineer \00a0";
+    }
+    16%, 17% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        content: "Software Engineer \00a0";
+    }
+    33% {
+        clip-path: polygon(-10% -10%, -10% -10%, -10% 110%, -10% 110%);
+        content: "Software Engineer \00a0";
+    }
+    34% {
+        clip-path: polygon(-10% -10%, -10% -10%, -10% 110%, -10% 110%);
+        content: "Web Developer \00a0";
+    }
+    49%, 50% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        content: "Web Developer \00a0";
+    }
+    66% {
+        clip-path: polygon(-10% -10%, -10% -10%, -10% 110%, -10% 110%);
+        content: "Web Developer \00a0";
+    }
+    67% {
+        clip-path: polygon(-10% -10%, -10% -10%, -10% 110%, -10% 110%);
+        content: "Graphic Designer \00a0";
+    }
+    82%, 83% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        content: "Graphic Designer \00a0";
+    }
+    99% {
+        clip-path: polygon(-10% -10%, -10% -10%, -10% 110%, -10% 110%);
+        content: "Graphic Designer \00a0";
+    }
+    100% {
+        clip-path: polygon(-10% -10%, -10% -10%, -10% 110%, -10% 110%);
+        content: "\00a0";
+    }
+}
+
+.z-998 {
+    z-index: 998 !important;
+}
+
+.z-997 {
+    z-index: 997 !important;
+}
+
+.max-w-400 {
+    max-width: 400px;
+}
+
+.min-w-200 {
+    min-width: 250px;
+}
+
+.min-w-50 {
+    min-width: 50px;
+}
+
+.tx-just {
+    text-align: justify !important;
+    text-justify: inter-word;
+}
+
+.bg-blr-1 {
+    margin-left: 10vw;
+    opacity: 0.3;
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(closest-side, #8A2387,rgba(255,255,255,0));
+    animation: opac-anim-1 3s infinite 1s;
+}
+.bg-blr-2 {
+    margin-left: 40vw;
+    opacity: 0.3;
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(closest-side, #E94057,rgba(255,255,255,0));
+    animation: opac-anim-1 3s infinite 1.5s;
+    filter: blur(1rem);
+}
+
+@media only screen and (max-width: 600px) {
+    .top-pd-1 {
+        top: 10vh;
+    }
+    .bg-blr-1 {
+        margin-left: 5vw;
+        opacity: 0.5;
+        width: 50vw;
+        height: 50vw;
+        background: radial-gradient(closest-side, #8A2387,rgba(255,255,255,0));
+        animation: opac-anim-1-mo 3s infinite 1s;
+    }
+    .bg-blr-2 {
+        margin-left: 35vw;
+        opacity: 0.5;
+        width: 50vw;
+        height: 50vw;
+        background: radial-gradient(closest-side, #E94057,rgba(255,255,255,0));
+        animation: opac-anim-1-mo 3s infinite 1.5s;
+        filter: blur(1rem);
+    }
+    .rel-elem {
+        transform: scale(2);
+    }
+}
+
+@keyframes opac-anim-1 {
+    0% { opacity: 0.3; }
+    50% { opacity: 0.1; }
+    100% { opacity: 0.3; }
+}
+
+@keyframes opac-anim-1-mo {
+    0% { opacity: 0.5; }
+    50% { opacity: 0.2; }
+    100% { opacity: 0.5; }
+}
+
+.flt-img-p-1 {
+    clip-path: circle(45% at 50% 50%);
+}
+
+.border-grd-1 {
+    border: 1px solid var(--txt);
+}
+
+.border-curve-1 {
+    border-radius: var(--corner-rad);
+}
+
+.h-btn-rem {
+    padding: 1rem;
+}
+
+.bg-sec {
+    background-color: var(--bg);
+}
+
+.bg-grad {
+    background: var(--bg-grad);
+}
+
+.bg-grad-2 {
+    background: var(--bg-grad-2);
+}
+
+.bg-grad-3 {
+    background: var(--bg-grad-3);
+}
+
+.txt-grad {
+    color: var(--clr-1);
+}
+
+.txt-grad-2 {
+    color: var(--clr-2);
+}
+
+.txt-grad-3 {
+    color: var(--clr-3);
+}
+
+.border-clr-1 {
+    border-color: var(--clr-1) !important;
+}
+
+.border-clr-2 {
+    border-color: var(--clr-2) !important;
+}
+
+.border-clr-3 {
+    border-color: var(--clr-3) !important;
+}
+
+.w-vw-100 {
+    width: 100vw;
+}
+
+.hbgr {
+    transition: var(--time-transition) transform ease-out
+}
+
+/* .hbgr:hover {
+    transition: var(--time-transition);
+    transform: scale(1.1) !important;
+} */
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.ripple-anim {
+    animation: ripple 1.5s ease-out infinite;
+}
+.ripple-anim::before {
+    animation-delay: 0.2s;
+}
+@keyframes ripple {
+    from {
+      opacity: 1;
+      transform: scale(0);
+    }
+    to {
+      opacity: 0;
+      transform: scale(3);
+    }
+}
+
+.exp-yr.active {
+    color: var(--clr-3);
+    border-color: var(--clr-3) !important;
+}
+
+.exp-yr, .exp-yr-data {
+    transition: var(--time-transition) ease-out
+}
+
+.up-down {
+    animation: move_up_down 2s infinite;
+}
+
+@keyframes move_up_down {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+}
+/* REUS - E */
+
+
+/* SPECC - S */
+
+/* .top-bar {
+    background: linear-gradient(to right, var(--contrast-bg) 50%, var(--bg) 50%);
+    -webkit-mask-image: -webkit-gradient(linear, left 50%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(linear, left 50%, left bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+} */
+
+@media only screen and (max-width: 600px) {
+    /* .top-bar {
+        background: var(--contrast-bg);
+        -webkit-mask-image: -webkit-gradient(linear, left 50%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(linear, left 50%, left bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    } */
+}
+
+/* SPECC - E */

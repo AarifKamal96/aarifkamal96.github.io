@@ -19,6 +19,7 @@
     --clr-1: #e94057;
     --clr-2: #56ab2f;
     --clr-3: #00c6ff;
+    --hlt-clr: #00c6ff;
 }
 
 @media only screen and (max-width: 600px) {
@@ -85,7 +86,6 @@ body {
     position: fixed;
     top: 0;
     z-index: 999;
-    width: 100%;
 }
 
 .vert-cen {
@@ -108,9 +108,29 @@ body {
     width: 1.75rem;
     height: 1.75rem;
 }
+.ico-md {
+    width: 3rem;
+    height: 3rem;
+}
+.ico-lg {
+    width: 5rem;
+    height: 5rem;
+}
+.ico-sm-h {
+    height: 1.75rem;
+}
+.ico-md-h {
+    height: 3rem;
+}
+.ico-lg-h {
+    height: 5rem;
+}
 
 .cur-ptr {
     cursor: pointer;
+}
+.cur-ptr-ne {
+    cursor: not-allowed;
 }
 
 .split-bg {
@@ -260,6 +280,9 @@ body {
     .rel-elem {
         transform: scale(2);
     }
+    .heigh-mob-50 {
+        height: 50% !important;
+    }
 }
 
 @keyframes opac-anim-1 {
@@ -285,6 +308,18 @@ body {
 .border-curve-1 {
     border-radius: var(--corner-rad);
 }
+.border-curve-1-t {
+    border-top-left-radius: var(--corner-rad);
+    border-top-right-radius: var(--corner-rad);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.border-curve-1-b {
+    border-bottom-left-radius: var(--corner-rad);
+    border-bottom-right-radius: var(--corner-rad);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
 
 .h-btn-rem {
     padding: 1rem;
@@ -292,6 +327,10 @@ body {
 
 .bg-sec {
     background-color: var(--bg);
+}
+
+.bg-pri {
+    background-color: var(--txt);
 }
 
 .bg-grad {
@@ -338,10 +377,10 @@ body {
     transition: var(--time-transition) transform ease-out
 }
 
-/* .hbgr:hover {
+.hbgr:hover {
     transition: var(--time-transition);
     transform: scale(1.1) !important;
-} */
+}
 
 .flex-shrink-0 {
     flex-shrink: 0;
@@ -378,11 +417,109 @@ body {
 }
 
 @keyframes move_up_down {
-    0%, 100% {
-      transform: translateY(0);
+    25% {
+        transform: rotate(10deg);
     }
     50% {
-      transform: translateY(-20px);
+        transform: rotate(-10deg);
+    }
+    75%, 100% {
+        transform: rotate(0deg);
+    }
+}
+
+.bg-seco {
+    background-color: var(--bg);
+}
+
+.process__item_st {
+    background-color: rgba(var(--txt), 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid var(--bg);
+}
+
+.filter-txt {
+    filter: brightness(0) invert(1);
+}
+
+.place-img-bg {
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-origin: content-box;
+}
+
+.projects-box {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid var(--bg);
+}
+.projects-box-parent-eso {
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,.5)), url("/img/erp_dash_1.jpg");
+    background-size: cover;
+}
+.projects-box-parent-inv {
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,.5)), url("/img/invobud_1.png");
+    background-size: cover;
+}
+.projects-box-parent-football {
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,.5)), url("/img/krzysztof-dubiel-hQBIJsBtyBw-unsplash.jpg");
+    background-size: cover;
+}
+.projects-box-parent-portfolio {
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,.5)), url("/img/portfolio.jpg");
+    background-size: cover;
+}
+
+.highlight-txt {
+    color: var(--hlt-clr);
+}
+.bottom-0-f {
+    margin-top: auto;
+}
+
+.form-contnr-bdr {
+    border: 1px solid var(--bg);
+}
+
+.inherit-clr, .inherit-clr:active, .inherit-clr:focus {
+    background-color: inherit;
+    color: inherit;
+    border-color: var(--bg);
+}
+
+.err-div {
+    color: red;
+}
+.err-content {
+    border: 1px solid red;
+}
+/* .txt-sdw-1 {
+    text-shadow: 0px 0px 10px var(--contrast-bg), 0px 0px 20px var(--contrast-bg);
+} */
+
+@media only screen and (max-width: 600px) {
+    .width-100-sm {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* .projects-box-parent {
+        padding-top: 10% !important;
+        padding-bottom: 5% !important;
+    } */
+    .projects-box {
+        transform: translateX(20%) !important;
+    }
+    .projects-box-st {
+        transform: translateX(20%) !important;
     }
 }
 /* REUS - E */

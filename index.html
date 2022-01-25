@@ -32,8 +32,12 @@
 </head>
 
 <body data-theme="dark">
-    <div class="top-bar fixed-div p-4 text-end">
-        <span class="cur-ptr" onclick="window.location='index.html'">
+    <div class="top-bar fixed-div p-3 text-end end-0">
+        <span class="btn btn-xs btn-outline-light bg-seco rounded-pill text-xs cont-txt-sz"
+            style="transform: scale(0.75);" onclick="window.open('/media/resume_aarif.pdf')">
+            Resume
+        </span>
+        <span class="cur-ptr hidden" onclick="window.location='index.html'">
             <svg class="ico-sm cur-ptr" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M0.5 18C0.5 14.3057 0.698604 11.3711 1.21611 9.04252C1.73235 6.71964 2.55926 5.03059 3.79493 3.79493C5.03059 2.55926 6.71964 1.73235 9.04252 1.21611C11.3711 0.698604 14.3057 0.5 18 0.5C21.6943 0.5 24.6289 0.698604 26.9575 1.21611C29.2804 1.73235 30.9694 2.55926 32.2051 3.79493C33.4407 5.03059 34.2677 6.71964 34.7839 9.04252C35.3014 11.3711 35.5 14.3057 35.5 18C35.5 21.6943 35.3014 24.6289 34.7839 26.9575C34.2677 29.2804 33.4407 30.9694 32.2051 32.2051C30.9694 33.4407 29.2804 34.2677 26.9575 34.7839C24.6289 35.3014 21.6943 35.5 18 35.5C14.3057 35.5 11.3711 35.3014 9.04252 34.7839C6.71964 34.2677 5.03059 33.4407 3.79493 32.2051C2.55926 30.9694 1.73235 29.2804 1.21611 26.9575C0.698604 24.6289 0.5 21.6943 0.5 18Z"
@@ -64,7 +68,6 @@
                         </span>
                         <span class="scr-reveal-fd-lr-1">
                             <span class="jumbo-head-sz">Hello.</span>
-                            <span class="cont-sz"></span>
                         </span>
                         <span class="px-2 d-flex flex-column scr-reveal-fd-lr-1">
                             <span class="text-start">
@@ -98,9 +101,16 @@
                             </span>
                             <span class="d-flex flex-column">
                                 <span class="text-start scr-reveal-fd-lr-2 tx-just">
-                                    Software Engineer, Creative Developer & Graphic Designer. I recognize my areas of
-                                    interest and expertise in the design, development and implementation of creative web
-                                    applications.
+                                    Experienced Full Stack Web Developer and Designer who can handle both backend logic
+                                    and UI elements of Web-based applications. Proven skills in building components for
+                                    highly scalable web applications. Experience working in healthcare and retail
+                                    industries.
+                                </span><br>
+                                <span
+                                    class="scr-reveal-fd-lr-2 btn btn-xs btn-outline-light bg-seco rounded-pill text-xs cont-txt-sz pull-end"
+                                    onclick="window.open('/media/resume_aarif.pdf')">
+                                    <i class="fa fa-file-alt"></i>&nbsp;
+                                    Get my Resume
                                 </span>
                             </span>
                         </div>
@@ -109,33 +119,681 @@
             </div>
         </div>
         <div class="m-5">&nbsp;</div>
-        <div class="row snap-row hori-cen">
-            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 p-4 my-5 trigger-hbgr-1">
-                <div class="main-content h-100 w-100 vert-cen hori-cen text-center float-end hbgr hbgr-1">
-                    WORK IN PROGRESS <br>
-                    <button class="cust-btn px-3 py-2 m-3" onclick="window.open('/media/aarif_cv.pdf')">
-                        View my CV <i class="fa fa-file"></i>
-                    </button><br>
-                    <i class="fab fa-linkedin cur-ptr" style="transform: scale(2);"
-                        onclick="window.open('https://www.linkedin.com/in/aarifkpasha/')"></i>
-                    &emsp;&emsp;
-                    <i class="fab fa-instagram-square cur-ptr" style="transform: scale(2);"
-                        onclick="window.open('https://www.instagram.com/aarif.kamal/')"></i>
-                    <div class="position-relative w-100 float-end d-flex hori-cen">
-                        <div class="position-absolute">
-                            <img src="/img/wip_bg_1.png" alt="">
+        <div class="row snap-row hori-cen hidden">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 p-2 my-5 trigger-hbgr-1">
+                <div class="main-content my-5 d-flex vert-cen hori-cen hbgr hbgr-1">
+                    <div class="bg-grad-3 w-100 p-5 border-curve-1" role="button"
+                        onclick="scr_to('prf-dv-st', 'prf-dv')">
+                        Professional portfolio <br>
+                        <span class="opacity-50">Experience, Education etc.</span>
+                    </div>
+                </div>
+                <div class="main-content my-5 d-flex vert-cen hori-cen hbgr hbgr-2" role="button">
+                    <div class="bg-grad-2 w-100 p-5 border-curve-1">
+                        Personal Details <br>
+                        <span class="opacity-50">Get to know me</span>
+                    </div>
+                </div>
+                <div class="main-content my-5 d-flex vert-cen hori-cen hbgr hbgr-3" role="button">
+                    <div class="bg-grad w-100 p-5 border-curve-1">
+                        View All <br>
+                        <span class="opacity-50">There's always a better option</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row snap-row hori-cen w-100 prf-dv m-0" id="prf-dv-st">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 p-2">
+                <div class="main-content my-5 d-flex vert-cen w-100 flex-shrink-0">
+                    <div class="d-flex flex-column w-100 flex-shrink-0">
+                        <div class="my-3 p-2 scr-reveal-fd-lr-3">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <span class="sub-head-sz w-100 scr-reveal-fd-lr-3">
+                                                <span class="opacity-50">Experience
+                                                    <i class="fa fa-suitcase"></i>
+                                                </span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="w-100 text-end scr-reveal-fd-lr-3">
+                                <hr>2019 - present
+                            </div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class="ico-md me-2 my-3 up-down">
+                                                <path
+                                                    d="M0.5 18C0.5 14.3057 0.698604 11.3711 1.21611 9.04252C1.73235 6.71964 2.55926 5.03059 3.79493 3.79493C5.03059 2.55926 6.71964 1.73235 9.04252 1.21611C11.3711 0.698604 14.3057 0.5 18 0.5C21.6943 0.5 24.6289 0.698604 26.9575 1.21611C29.2804 1.73235 30.9694 2.55926 32.2051 3.79493C33.4407 5.03059 34.2677 6.71964 34.7839 9.04252C35.3014 11.3711 35.5 14.3057 35.5 18C35.5 21.6943 35.3014 24.6289 34.7839 26.9575C34.2677 29.2804 33.4407 30.9694 32.2051 32.2051C30.9694 33.4407 29.2804 34.2677 26.9575 34.7839C24.6289 35.3014 21.6943 35.5 18 35.5C14.3057 35.5 11.3711 35.3014 9.04252 34.7839C6.71964 34.2677 5.03059 33.4407 3.79493 32.2051C2.55926 30.9694 1.73235 29.2804 1.21611 26.9575C0.698604 24.6289 0.5 21.6943 0.5 18Z"
+                                                    stroke="#E5E5E5" />
+                                                <mask id="mask0_82_14" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+                                                    <path
+                                                        d="M0 18C0 3.177 3.177 0 18 0C32.823 0 36 3.177 36 18C36 32.823 32.823 36 18 36C3.177 36 0 32.823 0 18Z"
+                                                        fill="black" />
+                                                </mask>
+                                                <g mask="url(#mask0_82_14)">
+                                                    <path
+                                                        d="M8.55192 38.368C4.96392 38.368 2.37259 37.4787 0.777922 35.7C-0.816745 33.9213 -1.61408 31.054 -1.61408 27.098V23.234H6.15992V28.156C6.15992 30.1187 6.78859 31.1 8.04592 31.1C8.75126 31.1 9.24192 30.9007 9.51792 30.502C9.79392 30.0727 9.93192 29.3673 9.93192 28.386C9.93192 27.098 9.77859 26.04 9.47192 25.212C9.16526 24.3533 8.76659 23.648 8.27592 23.096C7.81592 22.5133 6.97259 21.624 5.74592 20.428L2.34192 17.024C-0.295411 14.448 -1.61408 11.596 -1.61408 8.468C-1.61408 5.09467 -0.847411 2.534 0.685922 0.785999C2.24992 -0.992668 4.51926 -1.882 7.49392 -1.882C11.0513 -1.882 13.6119 -0.931336 15.1759 0.969997C16.7399 2.84067 17.5219 5.78467 17.5219 9.802H9.47192L9.42592 7.088C9.42592 6.56667 9.27259 6.15267 8.96592 5.846C8.68992 5.53933 8.29126 5.386 7.76992 5.386C7.15659 5.386 6.69659 5.55466 6.38992 5.892C6.08326 6.22933 5.92992 6.68933 5.92992 7.272C5.92992 8.56 6.66592 9.894 8.13792 11.274L12.7379 15.69C13.8113 16.7327 14.7006 17.7293 15.4059 18.68C16.1113 19.6 16.6786 20.704 17.1079 21.992C17.5373 23.2493 17.7519 24.752 17.7519 26.5C17.7519 30.3947 17.0313 33.354 15.5899 35.378C14.1793 37.3713 11.8333 38.368 8.55192 38.368ZM20.371 38V-1.514H36.195V6.122H28.421V13.804H35.873V21.256H28.421V30.318H36.701V38H20.371Z"
+                                                        fill="white" />
+                                                </g>
+                                            </svg>
+                                        </td>
+                                        <td>
+                                            <span class="sub-head-cont-sz w-100 txt-grad-3">
+                                                Systems Engineer
+                                            </span><br>
+                                            <span class="cont-txt-sz w-100">Reizend Private Ltd.</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Python, PHP Full Stack Developer</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="position-absolute up-down">
-                            <img src="/img/wip_fg_1.png" alt="">
+                        <div class="w-100 text-end scr-reveal-fd-lr-3">
+                            <hr>2015 - 2019
+                        </div>
+                        <div class="my-3 p-2 scr-reveal-fd-lr-3">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class="ico-md me-2 my-3 up-down">
+                                                <path
+                                                    d="M0.5 18C0.5 14.3057 0.698604 11.3711 1.21611 9.04252C1.73235 6.71964 2.55926 5.03059 3.79493 3.79493C5.03059 2.55926 6.71964 1.73235 9.04252 1.21611C11.3711 0.698604 14.3057 0.5 18 0.5C21.6943 0.5 24.6289 0.698604 26.9575 1.21611C29.2804 1.73235 30.9694 2.55926 32.2051 3.79493C33.4407 5.03059 34.2677 6.71964 34.7839 9.04252C35.3014 11.3711 35.5 14.3057 35.5 18C35.5 21.6943 35.3014 24.6289 34.7839 26.9575C34.2677 29.2804 33.4407 30.9694 32.2051 32.2051C30.9694 33.4407 29.2804 34.2677 26.9575 34.7839C24.6289 35.3014 21.6943 35.5 18 35.5C14.3057 35.5 11.3711 35.3014 9.04252 34.7839C6.71964 34.2677 5.03059 33.4407 3.79493 32.2051C2.55926 30.9694 1.73235 29.2804 1.21611 26.9575C0.698604 24.6289 0.5 21.6943 0.5 18Z"
+                                                    stroke="#E5E5E5" />
+                                                <mask id="mask0_82_19" style="mask-type:alpha"
+                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+                                                    <path
+                                                        d="M0 18C0 3.177 3.177 0 18 0C32.823 0 36 3.177 36 18C36 32.823 32.823 36 18 36C3.177 36 0 32.823 0 18Z"
+                                                        fill="black" />
+                                                </mask>
+                                                <g mask="url(#mask0_82_19)">
+                                                    <path
+                                                        d="M4.88414 38.368C2.03214 38.368 -0.0991924 37.3713 -1.50986 35.378C-2.88986 33.354 -3.57986 30.3027 -3.57986 26.224V9.204C-3.57986 5.55466 -2.76719 2.79466 -1.14186 0.923998C0.483474 -0.946669 2.90614 -1.882 6.12614 -1.882C8.73281 -1.882 10.7568 -1.36067 12.1981 -0.318003C13.6395 0.724665 14.6361 2.24267 15.1881 4.236C15.7401 6.22933 16.0161 8.79 16.0161 11.918H8.28814V8.376C8.28814 7.42533 8.15014 6.68933 7.87414 6.168C7.62881 5.64666 7.16881 5.386 6.49414 5.386C4.99147 5.386 4.24014 6.36733 4.24014 8.33V27.466C4.24014 28.662 4.39347 29.5667 4.70014 30.18C5.00681 30.7933 5.54347 31.1 6.31014 31.1C7.07681 31.1 7.61348 30.7933 7.92014 30.18C8.22681 29.5667 8.38014 28.662 8.38014 27.466V21.808H6.26414V15H15.9241V38H12.7501L11.4161 34.688C10.0055 37.1413 7.82814 38.368 4.88414 38.368ZM19.0683 -1.514H29.9703C32.7916 -1.514 34.9076 -0.732001 36.3183 0.831999C37.729 2.396 38.4496 4.71133 38.4803 7.778L38.5723 26.27C38.603 30.1647 37.9283 33.0933 36.5483 35.056C35.1683 37.0187 32.8836 38 29.6943 38H19.0683V-1.514ZM28.4063 31.008C29.8476 31.008 30.5683 30.3027 30.5683 28.892V8.514C30.5683 7.62467 30.4916 6.96533 30.3383 6.536C30.2156 6.076 29.9703 5.76933 29.6023 5.616C29.2343 5.46266 28.667 5.386 27.9003 5.386H27.0263V31.008H28.4063Z"
+                                                        fill="white" />
+                                                </g>
+                                            </svg>
+                                        </td>
+                                        <td>
+                                            <span class="sub-head-cont-sz w-100 txt-grad-3">
+                                                Graphic Designer
+                                            </span><br>
+                                            <span class="cont-txt-sz w-100">Freelance</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="w-100 text-end scr-reveal-fd-lr-3">
+                            <hr>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row snap-row hori-cen h-25">
+        <div class="row snap-row hori-cen w-100 prf-dv m-0">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 p-2">
+                <div class="main-content my-5 d-flex vert-cen w-100 flex-shrink-0">
+                    <div class="d-flex flex-column w-100 flex-shrink-0">
+                        <div class="my-3 p-2 scr-reveal-fd-lr-3">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <span class="sub-head-sz w-100 scr-reveal-fd-lr-3">
+                                                <span class="opacity-50">Education
+                                                    <i class="fa fa-user-graduate"></i>
+                                                </span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="w-100 text-end scr-reveal-fd-lr-3">
+                                <hr>2021 - present
+                            </div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class="ico-md me-2 my-3 up-down">
+                                                <g filter="url(#filter0_i_84_2)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M18 0C3.177 0 0 3.177 0 18C0 32.823 3.177 36 18 36C32.823 36 36 32.823 36 18C36 3.177 32.823 0 18 0ZM19.5601 9.15506L32.1997 12.949C33.2668 13.2696 33.2668 14.6473 32.1997 14.9678L19.5597 18.7618C18.6376 19.0385 17.85 18.8848 17.4395 18.7618L8.57771 16.1015C8.02263 16.4743 7.67463 17.0622 7.64019 17.7272C8.05662 17.976 8.34979 18.4045 8.34979 18.9167C8.34979 19.3939 8.09241 19.7955 7.72176 20.0523L8.87859 25.1381C8.97918 25.5803 8.63481 26 8.17081 26H5.62831C5.16476 26 4.82039 25.5803 4.92098 25.1381L6.07781 20.0523C5.70716 19.7955 5.44978 19.3939 5.44978 18.9167C5.44978 18.3903 5.757 17.9494 6.19336 17.705C6.22281 16.925 6.52006 16.2127 7.00355 15.6287L4.8 14.9673C3.73333 14.6473 3.73333 13.2691 4.8 12.949L17.44 9.15506C18.1283 8.94831 18.8714 8.94831 19.5601 9.15506ZM17.0136 20.116C17.5913 20.2895 18.6929 20.5038 19.9856 20.116L26.5573 18.1433L27.1999 23.1667C27.1999 24.7316 23.3048 26 18.4998 26C13.6949 26 9.7998 24.7316 9.7998 23.1667L10.4423 18.1437L17.0136 20.116Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_i_84_2" x="0" y="-2" width="36" height="38"
+                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="BackgroundImageFix" result="shape" />
+                                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                            result="hardAlpha" />
+                                                        <feOffset dy="-2" />
+                                                        <feGaussianBlur stdDeviation="2" />
+                                                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1"
+                                                            k3="1" />
+                                                        <feColorMatrix type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0" />
+                                                        <feBlend mode="normal" in2="shape"
+                                                            result="effect1_innerShadow_84_2" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </td>
+                                        <td>
+                                            <span class="sub-head-cont-sz w-100 txt-grad-3">
+                                                MBA
+                                            </span><br>
+                                            <span class="cont-txt-sz w-100">Data Science & Analytics</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Jain University, Bangalore</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="w-100 text-end scr-reveal-fd-lr-3">
+                            <hr>2015 - 2019
+                        </div>
+                        <div class="my-3 p-2 scr-reveal-fd-lr-3">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class="ico-md me-2 my-3 up-down">
+                                                <g filter="url(#filter0_i_84_2)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M18 0C3.177 0 0 3.177 0 18C0 32.823 3.177 36 18 36C32.823 36 36 32.823 36 18C36 3.177 32.823 0 18 0ZM19.5601 9.15506L32.1997 12.949C33.2668 13.2696 33.2668 14.6473 32.1997 14.9678L19.5597 18.7618C18.6376 19.0385 17.85 18.8848 17.4395 18.7618L8.57771 16.1015C8.02263 16.4743 7.67463 17.0622 7.64019 17.7272C8.05662 17.976 8.34979 18.4045 8.34979 18.9167C8.34979 19.3939 8.09241 19.7955 7.72176 20.0523L8.87859 25.1381C8.97918 25.5803 8.63481 26 8.17081 26H5.62831C5.16476 26 4.82039 25.5803 4.92098 25.1381L6.07781 20.0523C5.70716 19.7955 5.44978 19.3939 5.44978 18.9167C5.44978 18.3903 5.757 17.9494 6.19336 17.705C6.22281 16.925 6.52006 16.2127 7.00355 15.6287L4.8 14.9673C3.73333 14.6473 3.73333 13.2691 4.8 12.949L17.44 9.15506C18.1283 8.94831 18.8714 8.94831 19.5601 9.15506ZM17.0136 20.116C17.5913 20.2895 18.6929 20.5038 19.9856 20.116L26.5573 18.1433L27.1999 23.1667C27.1999 24.7316 23.3048 26 18.4998 26C13.6949 26 9.7998 24.7316 9.7998 23.1667L10.4423 18.1437L17.0136 20.116Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_i_84_2" x="0" y="-2" width="36" height="38"
+                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="BackgroundImageFix" result="shape" />
+                                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                            result="hardAlpha" />
+                                                        <feOffset dy="-2" />
+                                                        <feGaussianBlur stdDeviation="2" />
+                                                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1"
+                                                            k3="1" />
+                                                        <feColorMatrix type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0" />
+                                                        <feBlend mode="normal" in2="shape"
+                                                            result="effect1_innerShadow_84_2" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                        </td>
+                                        <td>
+                                            <span class="sub-head-cont-sz w-100 txt-grad-3">
+                                                B. Tech
+                                            </span><br>
+                                            <span class="cont-txt-sz w-100">
+                                                Computer Science & Engineering
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">APJ Abdul Kalam Technological University</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">St. Thomas Insitute, Trivandrum</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="w-100 text-end scr-reveal-fd-lr-3">
+                            <hr>2013 - 2015
+                        </div>
+                        <div class="my-3 p-2 scr-reveal-fd-lr-3">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class="ico-md me-2 my-3 up-down">
+                                                <g filter="url(#filter0_i_85_3091)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M18 0C3.177 0 0 3.177 0 18C0 32.823 3.177 36 18 36C32.823 36 36 32.823 36 18C36 3.177 32.823 0 18 0ZM6 26.375V15.75C6 15.0598 6.55977 14.5 7.25 14.5H9.75V27H6.625C6.27969 27 6 26.7203 6 26.375ZM19.125 13.875H20.0625C20.2352 13.875 20.375 14.0148 20.375 14.1875V14.8125C20.375 14.9852 20.2352 15.125 20.0625 15.125H18.1875C18.0148 15.125 17.875 14.9852 17.875 14.8125V12.3125C17.875 12.1398 18.0148 12 18.1875 12H18.8125C18.9852 12 19.125 12.1398 19.125 12.3125V13.875ZM19.1934 7.20977L25.4434 11.3766C25.791 11.6082 26 11.9988 26 12.4168V27H21V21.375C21 21.0297 20.7203 20.75 20.375 20.75H16.625C16.2797 20.75 16 21.0297 16 21.375V27H11V12.4164C11 12.2107 11.0509 12.0081 11.148 11.8267C11.2451 11.6453 11.3855 11.4907 11.5566 11.3766L17.8066 7.20977C18.012 7.07298 18.2532 7 18.5 7C18.7468 7 18.988 7.07298 19.1934 7.20977ZM15.375 13.875C15.375 15.6008 16.7742 17 18.5 17C20.2258 17 21.625 15.6008 21.625 13.875C21.625 12.1492 20.2258 10.75 18.5 10.75C16.7742 10.75 15.375 12.1492 15.375 13.875ZM27.25 14.5H29.75C30.4402 14.5 31 15.0598 31 15.75V26.375C31 26.7203 30.7203 27 30.375 27H27.25V14.5Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_i_85_3091" x="0" y="-3" width="36" height="39"
+                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="BackgroundImageFix" result="shape" />
+                                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                            result="hardAlpha" />
+                                                        <feOffset dy="-3" />
+                                                        <feGaussianBlur stdDeviation="2" />
+                                                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1"
+                                                            k3="1" />
+                                                        <feColorMatrix type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                        <feBlend mode="normal" in2="shape"
+                                                            result="effect1_innerShadow_85_3091" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+
+                                        </td>
+                                        <td>
+                                            <span class="sub-head-cont-sz w-100 txt-grad-3">
+                                                Higher Secondary
+                                            </span><br>
+                                            <span class="cont-txt-sz w-100">
+                                                Govt. HSS Poovathoor, Trivandrum
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="w-100 text-end scr-reveal-fd-lr-3">
+                            <hr>2012 - 2013
+                        </div>
+                        <div class="my-3 p-2 scr-reveal-fd-lr-3">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" class="ico-md me-2 my-3 up-down">
+                                                <g filter="url(#filter0_i_85_3091)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M18 0C3.177 0 0 3.177 0 18C0 32.823 3.177 36 18 36C32.823 36 36 32.823 36 18C36 3.177 32.823 0 18 0ZM6 26.375V15.75C6 15.0598 6.55977 14.5 7.25 14.5H9.75V27H6.625C6.27969 27 6 26.7203 6 26.375ZM19.125 13.875H20.0625C20.2352 13.875 20.375 14.0148 20.375 14.1875V14.8125C20.375 14.9852 20.2352 15.125 20.0625 15.125H18.1875C18.0148 15.125 17.875 14.9852 17.875 14.8125V12.3125C17.875 12.1398 18.0148 12 18.1875 12H18.8125C18.9852 12 19.125 12.1398 19.125 12.3125V13.875ZM19.1934 7.20977L25.4434 11.3766C25.791 11.6082 26 11.9988 26 12.4168V27H21V21.375C21 21.0297 20.7203 20.75 20.375 20.75H16.625C16.2797 20.75 16 21.0297 16 21.375V27H11V12.4164C11 12.2107 11.0509 12.0081 11.148 11.8267C11.2451 11.6453 11.3855 11.4907 11.5566 11.3766L17.8066 7.20977C18.012 7.07298 18.2532 7 18.5 7C18.7468 7 18.988 7.07298 19.1934 7.20977ZM15.375 13.875C15.375 15.6008 16.7742 17 18.5 17C20.2258 17 21.625 15.6008 21.625 13.875C21.625 12.1492 20.2258 10.75 18.5 10.75C16.7742 10.75 15.375 12.1492 15.375 13.875ZM27.25 14.5H29.75C30.4402 14.5 31 15.0598 31 15.75V26.375C31 26.7203 30.7203 27 30.375 27H27.25V14.5Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_i_85_3091" x="0" y="-3" width="36" height="39"
+                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feBlend mode="normal" in="SourceGraphic"
+                                                            in2="BackgroundImageFix" result="shape" />
+                                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                            result="hardAlpha" />
+                                                        <feOffset dy="-3" />
+                                                        <feGaussianBlur stdDeviation="2" />
+                                                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1"
+                                                            k3="1" />
+                                                        <feColorMatrix type="matrix"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                                        <feBlend mode="normal" in2="shape"
+                                                            result="effect1_innerShadow_85_3091" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+
+                                        </td>
+                                        <td>
+                                            <span class="sub-head-cont-sz w-100 txt-grad-3">
+                                                High School
+                                            </span><br>
+                                            <span class="cont-txt-sz w-100">
+                                                Lourdes Mount Public School, Trivandrum
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="w-100 text-end scr-reveal-fd-lr-3">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="row snap-row hori-cen w-100 prf-dv m-0 section3">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 p-2">
+                <div class="main-content my-5 d-flex vert-cen w-100 flex-shrink-0">
+                    <div class="d-flex flex-column w-100 flex-shrink-0">
+                        <div class="my-3 p-2 scr-reveal-fd-lr-4">
+                            <span class="sub-head-sz w-100 scr-reveal-fd-lr-4">
+                                <span class="opacity-50">Development
+                                    <i class="fa fa-angle-left"></i>/
+                                    <i class="fa fa-angle-right"></i>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="d-flex process scr-reveal-fd-lr-6" style="pointer-events: none;">
+                            <span class="min-w-200 p-4 border-curve-1 m-2 process__item">
+                            </span>
+                            <span
+                                class="min-w-200 bg-seco p-4 border-curve-1 m-2 process__item process__item_st d-flex hori-cen vert-cen">
+                                <img class="w-100 filter-txt"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Python_logo_and_wordmark.svg"
+                                    alt="">
+                            </span>
+                            <span
+                                class="min-w-200 bg-seco p-4 border-curve-1 m-2 process__item process__item_st d-flex hori-cen vert-cen">
+                                <img class="w-100 filter-txt"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg" alt="">
+                            </span>
+                            <span
+                                class="min-w-200 bg-seco p-4 border-curve-1 m-2 process__item process__item_st d-flex hori-cen vert-cen">
+                                <img class="w-100 filter-txt"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/3/3b/PHP_Logo%2C_text_only.svg"
+                                    alt="">
+                            </span>
+                            <span
+                                class="min-w-200 bg-seco p-4 border-curve-1 m-2 process__item process__item_st d-flex hori-cen vert-cen">
+                                <img class="w-100 filter-txt"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/6/60/Symfony2.svg" alt="">
+                            </span>
+                            <span
+                                class="min-w-200 bg-seco p-4 border-curve-1 m-2 process__item process__item_st d-flex hori-cen vert-cen">
+                                <img class="w-100 filter-txt"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg" alt="">
+                            </span>
+                            <span
+                                class="min-w-200 bg-seco p-4 border-curve-1 m-2 process__item process__item_st d-flex hori-cen vert-cen">
+                                <img class="w-100 filter-txt"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="">
+                            </span>
+                            <span
+                                class="min-w-200 bg-seco p-4 border-curve-1 m-2 process__item process__item_st d-flex hori-cen vert-cen">
+                                <img class="w-100 filter-txt"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/f/fd/JQuery-Logo.svg" alt="">
+                            </span>
+                            <span
+                                class="min-w-200 bg-seco p-4 border-curve-1 m-2 process__item process__item_st d-flex hori-cen vert-cen">
+                                <img class="w-100 filter-txt"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="">
+                            </span>
+                            <span class="min-w-200 p-4 border-curve-1 m-2 process__item">
+                            </span>
+                            <span class="min-w-200 p-4 border-curve-1 m-2 process__item">
+                            </span>
+                            <span class="min-w-200 p-4 border-curve-1 m-2 process__item">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row snap-row hori-cen height-reset-wid heigh-mob-50">
+            <div class="display-4 p-2">
+                <span class="main-head-sz">Python</span> <span class="cont-txt-sz"><small>Django</small></span> <br>
+                <span class="main-head-sz">PHP</span> <span class="cont-txt-sz"><small>Symfony
+                        CodeIgniter</small></span> <br>
+                <span class="main-head-sz">HTML5 CSS3</span> <br>
+                <span class="main-head-sz">JavaScript</span> <span class="cont-txt-sz"><small>JQuery
+                        React</small></span> <br>
+            </div>
+        </div>
+        <div class="row snap-row hori-cen w-100 prf-dv m-0 section3">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 p-2">
+                <div class="main-content my-5 d-flex vert-cen w-100 flex-shrink-0">
+                    <div class="d-flex flex-column w-100 flex-shrink-0">
+                        <div class="my-3 p-2 scr-reveal-fd-lr-5">
+                            <span class="sub-head-sz w-100 scr-reveal-fd-lr-5">
+                                <span class="opacity-50">Design
+                                    <i class="fa fa-drafting-compass"></i>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="row m-2 scr-reveal-fd-lr-7-t">
+                            <div class="p-0 m-4 border-curve-1 ico-lg scr-reveal-fd-lr-7"
+                                style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg');">
+                            </div>
+                            <div class="p-0 m-4 border-curve-1 ico-lg scr-reveal-fd-lr-7"
+                                style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg');">
+                            </div>
+                            <div class="p-0 m-4 border-curve-1 ico-lg scr-reveal-fd-lr-7"
+                                style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg');">
+                            </div>
+                            <div class="p-0 m-4 border-curve-1 ico-lg scr-reveal-fd-lr-7"
+                                style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg');">
+                            </div>
+                            <div class="p-2 m-4 border-curve-1 bg-pri ico-lg place-img-bg scr-reveal-fd-lr-7"
+                                style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg');">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row snap-row hori-cen w-100 prf-dv m-0 section3">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 p-2">
+                <div class="main-content my-5 d-flex vert-cen w-100 flex-shrink-0">
+                    <div class="d-flex flex-column w-100 flex-shrink-0">
+                        <div class="my-3 p-2 scr-reveal-fd-lr-8">
+                            <span class="sub-head-sz w-100 scr-reveal-fd-lr-8">
+                                <span class="opacity-50">Personal Projects
+                                    <i class="fa fa-project-diagram"></i>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="row m-0 p-0">
+                            <!-- INVOBUD -->
+                            <div class="p-2 mb-5 projects-box-parent projects-box-parent-inv border-curve-1 scr-reveal-fd-lr-8 hidden"
+                                style="transform: translateX(-10%)">
+                                <div class="sub-head-cont-sz d-flex scr-reveal-fd-lr-8 projects-box-st p-2">
+                                    <div class="w-100 bottom-0-f">Invobud</div>
+                                    <div class="border-curve-1 float-end text-end m-2">
+                                        <span class="link-to p-2 cur-ptr-ne">
+                                            <i class="fa fa-external-link-alt"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="projects-box border-curve-1 p-2 scr-reveal-fd-lr-8 float-end mb-2">
+                                    <div class="cont-txt-sz pt-2 scr-reveal-fd-lr-8">v2&nbsp;|&nbsp;2021</div>
+                                    <div class="cont-txt-sz pt-3 txt-sdw-1 scr-reveal-fd-lr-8">Simple Invoicing
+                                        application for small
+                                        enterprises.
+                                        Provides option to print and generate sale reports.</div>
+                                </div>
+                                <div class="pt-2">
+                                    <div class="cont-txt-sz txt-sdw-1 scr-reveal-fd-lr-8 projects-box-st p-2">
+                                        PHP&nbsp;|&nbsp;
+                                        JS&nbsp;|&nbsp;
+                                        MySQL&nbsp;
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ESO -->
+                            <div class="p-2 mb-5 projects-box-parent projects-box-parent-eso border-curve-1 scr-reveal-fd-lr-8"
+                                style="transform: translateX(-10%)">
+                                <div class="sub-head-cont-sz d-flex scr-reveal-fd-lr-8 projects-box-st p-2">
+                                    <div class="w-100 bottom-0-f">Enterprise Strategy Optimizer</div>
+                                    <div class="border-curve-1 float-end text-end m-2">
+                                        <span class="link-to p-2 cur-ptr-ne">
+                                            <i class="fa fa-external-link-alt"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="projects-box border-curve-1 p-2 scr-reveal-fd-lr-8 float-end mb-2">
+                                    <div class="cont-txt-sz pt-2 scr-reveal-fd-lr-8">v2&nbsp;|&nbsp;2019</div>
+                                    <div class="cont-txt-sz pt-3 txt-sdw-1 scr-reveal-fd-lr-8">Resource planning web
+                                        application based on
+                                        <span class="highlight-txt">Balanced Scorecard</span> management system.
+                                        Additional tools to maintain employee objectives, messaging, revenue prediction
+                                        and planning (machine learning), analyze customer interations, data
+                                        visualization.
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <div class="cont-txt-sz txt-sdw-1 scr-reveal-fd-lr-8 projects-box-st p-2">
+                                        ASP.NET&nbsp;|&nbsp;
+                                        C#&nbsp;|&nbsp;
+                                        MSSQL&nbsp;
+                                        <span class="text-warning txt-sdw-1">
+                                            <i class="fa fa-exclamation-triangle"></i> In Redesign
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FOOTBALL -->
+                            <div class="p-2 mb-5 projects-box-parent projects-box-parent-football border-curve-1 scr-reveal-fd-lr-8 hidden"
+                                style="transform: translateX(-10%)">
+                                <div class="sub-head-cont-sz d-flex scr-reveal-fd-lr-8 projects-box-st p-2">
+                                    <div class="w-100 bottom-0-f">Goalsaway</div>
+                                    <div class="border-curve-1 float-end text-end m-2">
+                                        <span class="link-to p-2 cur-ptr-ne">
+                                            <i class="fa fa-external-link-alt"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="projects-box border-curve-1 p-2 scr-reveal-fd-lr-8 float-end mb-2">
+                                    <div class="cont-txt-sz pt-2 scr-reveal-fd-lr-8">v1&nbsp;|&nbsp;2021</div>
+                                    <div class="cont-txt-sz pt-3 txt-sdw-1 scr-reveal-fd-lr-8">Web application to know
+                                        quick football data like fixtures, live scores, team info, odds, statistics etc.
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <div class="cont-txt-sz txt-sdw-1 scr-reveal-fd-lr-8 projects-box-st p-2">
+                                        Node.js&nbsp;|&nbsp;
+                                        <span class="text-warning txt-sdw-1">
+                                            <i class="fa fa-exclamation-triangle"></i> In Progress
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- PORTFOLIO -->
+                            <div class="p-2 mb-5 projects-box-parent projects-box-parent-portfolio border-curve-1 scr-reveal-fd-lr-8"
+                                style="transform: translateX(-10%)">
+                                <div class="sub-head-cont-sz d-flex scr-reveal-fd-lr-8 projects-box-st p-2">
+                                    <div class="w-100 bottom-0-f">Personal Portfolio</div>
+                                    <div class="border-curve-1 float-end text-end m-2">
+                                        <span class="link-to p-2 cur-ptr"
+                                            onclick="window.open('https://github.com/AarifKamal96/aarifkamal96.github.io')">
+                                            <i class="fa fa-external-link-alt"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="projects-box border-curve-1 p-2 scr-reveal-fd-lr-8 float-end mb-2">
+                                    <div class="cont-txt-sz pt-2 scr-reveal-fd-lr-8">v1&nbsp;|&nbsp;2021</div>
+                                    <div class="cont-txt-sz pt-3 txt-sdw-1 scr-reveal-fd-lr-8">Personal portfolio
+                                        website to showcase a developer profile including experiences, education,
+                                        skills, works etc. Available on Github to customise for personal use with
+                                        attribution.
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <div class="cont-txt-sz txt-sdw-1 scr-reveal-fd-lr-8 projects-box-st p-2">
+                                        HTML5&nbsp;|&nbsp;
+                                        CSS3&nbsp;|&nbsp;
+                                        JavaScript&nbsp;|&nbsp;
+                                        jQuery&nbsp;|&nbsp;
+                                        GSAP&nbsp;
+                                        <span class="text-warning txt-sdw-1">
 
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row snap-row hori-cen w-100 prf-dv m-0 section3">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 p-2">
+                <div class="main-content my-5 d-flex vert-cen w-100 flex-shrink-0">
+                    <div class="d-flex flex-column w-100 flex-shrink-0">
+                        <div class="my-3 p-2 scr-reveal-fd-lr-6">
+                            <span class="sub-head-sz w-100 scr-reveal-fd-lr-6">
+                                <span class="opacity-50">Contact
+                                    <i class="fa fa-paper-plane"></i>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="row m-2 scr-reveal-fd-lr-7-t">
+                            <div class="contact-sect display-table scr-reveal-fd-lr-6">
+                                <span class="display-table-cell scr-reveal-fd-lr-6">
+                                    <i class="fa fa-envelope-square"></i>&emsp;
+                                </span>
+                                <span class="display-table-cell click-copy cur-ptr scr-reveal-fd-lr-6"
+                                    onclick="window.open('mailto:aarif.k.pasha@gmail.com')">
+                                    aarif.k.pasha@gmail.com
+                                </span>
+                                <hr>
+                            </div>
 
+                            <div class="contact-sect display-table scr-reveal-fd-lr-6">
+                                <span class="display-table-cell scr-reveal-fd-lr-6">
+                                    <i class="fab fa-linkedin"></i>&emsp;
+                                </span>
+                                <span class="display-table-cell click-copy cur-ptr scr-reveal-fd-lr-6"
+                                    onclick="window.open('https://www.linkedin.com/in/aarifkpasha')">
+                                    linkedin.com/in/aarifkpasha
+                                </span>
+                                <hr>
+                            </div>
+
+                            <div class="contact-sect display-table scr-reveal-fd-lr-6">
+                                <span class="display-table-cell scr-reveal-fd-lr-6">
+                                    <i class="fab fa-github"></i>&emsp;
+                                </span>
+                                <span class="display-table-cell click-copy cur-ptr scr-reveal-fd-lr-6"
+                                    onclick="window.open('https://github.com/aarifkamal96/')">
+                                    github.com/aarifkamal96
+                                </span>
+                            </div><br><br>
+                            <div class="form-contnr-bdr mt-3 border-curve-1 p-0 scr-reveal-fd-lr-6 w-100">
+                                <div class="form-contnr">
+                                    <div class="px-3 m-1 err-div"></div>
+                                    <form
+                                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeybmlwUoDasGeiVWbPLcDJYbSwXYDnSRcFGUQqpA9IDz8VQg/formResponse?"
+                                        target="hidden_iframe" onsubmit="submitted=true;">
+                                        <div class="p-3">
+                                            <label class="form-control-label p-2">Name*</label>
+                                            <input class="form-control inherit-clr p-2" type="text" placeholder="Name*"
+                                                name="entry.2005620554" required id="f_name">
+                                        </div>
+                                        <div class="p-3">
+                                            <label class="form-control-label p-2">Email Address*</label>
+                                            <input class="form-control inherit-clr p-2" type="email"
+                                                placeholder="Email address*" name="entry.1045781291" required
+                                                id="f_email">
+                                        </div>
+                                        <div class="p-3">
+                                            <label class="form-control-label p-2">Phone Number</label>
+                                            <input class="form-control inherit-clr p-2" type="tel"
+                                                placeholder="Phone Number" name="entry.1166974658" id="f_ph">
+                                        </div>
+                                        <div class="p-3">
+                                            <label class="form-control-label p-2">Message</label>
+                                            <textarea class="form-control inherit-clr p-2" rows="5"
+                                                placeholder="Message*" name="entry.839337160" id="f_msg"></textarea>
+                                        </div>
+                                        <button class="form-control btn bg-grad-3 text-light border-curve-1-b"
+                                            id="f_btn" onclick="event.preventDefault();ctFSbt();">Send</button>
+                                    </form>
+                                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                                        onload="if(submitted) {}"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-2 m-2"><small>Designed & Built by Aarif K Pasha</small></div>
+        </div>
+    </div>
 </body>
 
 </html>
